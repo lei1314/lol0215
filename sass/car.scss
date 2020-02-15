@@ -1,0 +1,599 @@
+@charset "utf-8"; // 设置支持中文注释
+
+$basefontsize:8px;
+$direction:top;
+$prefix: line;
+$light: light;
+// margin
+$mar:margin;
+// 背景
+$bj:background-image;
+// 背景位置
+$bp:background-position;
+// 背景平铺
+$br:background-repeat;
+//背景颜色
+$bcolor:background-color; 
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,form,input,fieldset,legend,img,select{
+    #{$mar}:0;
+    padding:0;
+}
+ul,ol,li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color:#333;
+}
+img{
+    display: inline-block;
+    border:0;
+    display: block;
+}
+body {
+    font-family: "微软雅黑";
+    color: #2e2e2e;
+    font-size: 12px;
+    background: #f3f4f6;
+}
+section,nav,header,footer,aside{
+    display:block;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight:normal;
+}
+strong,b{
+    font-weight:normal;
+}
+i,em{
+    font-style:normal;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.clear:after{
+    content:".";
+    display:block;
+    clear:both;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+}
+.topnav{
+    height: 30px; 
+    line-height: 30px;
+    width: 1190px;
+    #{$mar}: 0 auto;
+   #{$bcolor}:#f9f9f9;
+}
+/* nav */
+/* <!-- 通用主题栏 --> */
+.menu{
+    height: auto;
+    position: relative;
+    #{$bp}: 0 -2px;
+    #{$bj}: url(../img/bg-head.jpg);
+    #{$br}:  no-repeat;
+}
+/* 搜索栏 */
+.nav-search{
+    #{$mar}: 0 auto;
+    width: 1190px;
+    height: 125px;
+}
+/* logobox */
+.logobox{
+    #{$mar}: 37px 0 0;
+    width: 280px;
+    height: 52px;
+    float: left;
+}
+.logobox a{
+    display: block;
+    width: 280px;
+    height: 55px;
+    #{$bp}: -668px -3px;
+}
+.navico{
+    #{$bj}:url(../img/navico.png);
+    #{$br}: no-repeat;
+}
+.soso{
+    width: 522px;
+    height: 51px;
+    #{$bp}: -999px 0;
+    float: left;
+    #{$mar}: 39px 65px 0 100px;
+}
+.txt{
+    width: 522px;
+    height: 51px;
+    #{$bp}: -999px 0;
+    position: relative;
+}
+.txt input{
+    float: left;
+    #{$mar}: 1px 0 0 6px;
+    width: 450px;
+    padding: 14px 10px 15px 10px;
+    height: 18px;
+    line-height: 18px;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    background: none;
+    outline: none;
+}
+.txt input::-webkit-input-placeholder { /* WebKit browsers */
+    color: #fff;
+    font-size: 12px;
+  }
+.txt a{
+    position: absolute;
+    top: 2px;
+    right: 0;
+    z-index: 2;
+    width: 49px;
+    height: 46px;
+    #{$bp}: -1558px 0;
+    text-indent: -9999px;
+    display: block;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+/* logogame */
+.logogame{
+    #{$mar}: 37px 0 0;
+    width: 223px;
+    height: 59px;
+    float: left;
+}
+.logogame a{
+    width: 223px;
+    height: 59px;
+    #{$bp}: -437px -5px;
+    display: block;
+}
+/* 主导航栏 */
+.navindex{
+    #{$mar}: 0 auto;
+    width: 1190px;
+    height: 76px;
+    #{$bp}: -275px -94px;
+    #{$br}: no-repeat;
+}
+/* 主导航栏左边 */
+.navl{
+    width: 940px;
+    height: 76px;
+    position: relative;
+    float: left;
+}
+.navl li{
+    float: left;
+    width: 134px;
+    height: 76px;
+    #{$bp}: -28px -94px;
+}
+
+.navl a{
+    width: 134px;
+    height: 76px;
+    display: block;
+    text-align: center;
+    line-height: 76px;
+    font-size: 18px;
+    color: #9f9f9f;
+    position: relative;
+}
+.navsy a{
+    font-weight: bold;
+    color: #fef7ec;
+    text-shadow: 1px 3px 3px #bf4d00;
+}
+/* 购物车 */
+.car{
+    width: 192px;
+    height: 76px;
+    line-height: 76px;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    float: right;
+}
+.car a{
+    width: 192px;
+    color: #ff5900;
+    text-indent: 18px;
+}
+.car i{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    z-index: 10;
+    width: 60px;
+    height: 76px;
+    line-height: 76px;
+    text-align: center;
+    font-size: 18px;
+    display: block;
+    overflow: hidden;
+    text-indent: 0;
+    font-style: normal;
+}
+.car span{
+    position: absolute;
+    top: 26px;
+    left: 36px;
+    z-index: 10;
+    width: 28px;
+    height: 24px;
+    #{$bp}: -237px -5px;
+    display: block;
+    text-indent: 18px;
+}
+/* <!-- 子导航栏 --> */
+.subnav{
+    width: 1190px;
+    #{$mar}: 0 auto;
+    height: auto;
+    #{$bcolor}: #f3f4f6;
+
+}
+.subnavlistbox{
+    height: 54px;
+    line-height: 54px;
+    #{$bcolor}: #e6e6e8;
+    
+}
+/* 全部分类 */
+.subnavlistbox .sublistall{
+    float: left;
+    width: 152px;
+}
+.subnavlistbox li{
+    float: left;
+    width: 118px;
+}
+.subnavlistbox a{
+    display: block;
+    width: 118px;
+    color: #000;
+    font-size: 14px;
+    text-align: center;
+}
+/* --------------- */
+.lastding{
+    display: inline-block;
+    position: relative;
+    padding: 0 10px;
+}
+// 你现在所在的位置------------------------------------
+.location-box {
+    #{$mar}: 24px auto 8px;
+    width: 1190px;
+    color: #606060;
+    height: 18px;
+    position: relative;
+    zoom: 1;
+    cursor: pointer;
+}
+// 中间内容部分
+.mainer{
+    width: 1190px;
+    margin: 0 auto;
+    height: auto;
+    background-color:#fafbfc;
+    padding-left: 22px;
+}
+.car-title{
+    font-weight: 700;
+    margin-bottom: 14px;
+    width: 1146px;
+    font-size: 14px;
+    color: #222;
+    height: 22px;
+    border-bottom: 1px solid #ddd;
+    text-indent: 2px;
+    padding-top: 18px;
+}
+.par-group{
+    padding-bottom: 10px;
+}
+.par-group select{
+    outline: none;
+    margin-right: 10px;
+    height: 30px;
+    line-height: 30px;
+    padding: 4px 6px;
+    width: 175px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+.carlist{
+
+    margin-top: 10px;
+}
+.tablebox{
+    padding: 0 16px;
+    background: #f3f4f6;
+}
+.tablebox table{
+    width: 100%;
+    font-size: 14px;
+}
+.tablebox td,.tablebox th{
+    padding: 8px 0;
+    font-weight: normal;
+    font-size: 14px;
+    color: #222;
+    vertical-align: middle;
+    word-break: break-all;
+    border-bottom: 1px solid #ddd;
+}
+.tablebox td{
+    text-align: center;
+}
+.tablebox table img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 39px;
+    height: 28px;
+}
+.tablebox button{
+    border: none;
+    outline: none;
+}
+.goods-num{
+    width: 36px;
+    border: none;
+    background: #fff;
+    border: 1px solid #ddd;
+    display:inline-block;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    outline: none;
+}
+.car-totalbox{
+    width: 1143;
+    margin: 15px auto 35px;
+    height: 49px;
+    padding: 0 10px;
+    line-height: 49px;
+    background-color: #e7e9eb;
+    font-size: 14px;
+}
+// 你的优惠券
+.yhq-info{
+    margin-top: 16px;
+    padding-bottom: 22px;
+    margin-left: 22px;
+}
+
+.noticket{
+    padding: 9px 9px;
+    line-height: 21px;
+}
+// 提交订单
+.cart-t1{
+    margin: 20px 18px 50px 0;
+    background: #fffeee;
+    border: 1px solid #ddd;
+    height: 56px;
+    line-height: 56px;
+    display: block;
+    padding: 0 170px 0 32px;
+    color: #222;
+    font-size: 14px;
+    text-align: right;
+    position: relative;
+}
+.cart-t1 p{
+    float: left;
+    color: red;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: left;
+}
+.cart-t1 div span{
+    color: #f74a4a;
+    font-size: 24px;
+    padding: 0 5px;
+    font-weight: bold;
+}
+.btn-car{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: -1px;
+    z-index: 10;
+    width: 146px;
+    height: 57px;
+    text-align: center;
+    line-height: 57px;
+    background: #f74a4a;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.payment{
+    padding-bottom: 22px;
+    height: auto;
+    margin-left: 22px;
+}
+.payment li{
+    color: #60605f;
+    line-height: 26px;
+}
+.payment li:nth-child(1){
+    color: red;
+}
+/* 底部 */
+.foot{
+    background-color: #3b3f4a;
+    margin-top: 40px;
+    min-width: 1280px;
+}
+/* 返回顶部 */
+.fixednav{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 2000;
+    margin: 0 20px 215px 0;
+}
+.fixednav a{
+    display: block;
+    border: 1px solid #e1e1e1;
+    background: #fff;
+    width: 68px;
+    padding: 7px 0;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.fixednav a span{
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-image: url(../img/bg.png);
+        background-position: -122px -153px;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    
+}
+
+/* 注册登录页面 */
+
+.over{
+    background-color: rgb(230, 245, 255);
+    border-top: 1px solid rgb(230, 245, 255);
+    position: absolute;
+    height: 100%;
+    z-index: 100001;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    opacity: 0.7;
+    display: none;
+}
+/* 关闭按钮 */
+#btnclose{
+    position:absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    opacity: 0.8;
+    font-size: 30px;
+    right: 5px;
+    text-align: center;
+    line-height: 30px;
+    top: 5px;
+    border: none;
+    outline: none;
+}
+.registerin{
+    display: none;
+    height: 368px;
+    width: 622px;
+    border: 0px;
+    padding: 0px;
+    margin: 0px 0px 0px -311px;
+    position: absolute;
+    z-index: 100002;
+    top: 250px;
+    left: 50%;
+    visibility: visible;
+    background-color: #ffffff;
+}
+.registerin p{
+    text-align: center;
+}
+.registerintop{
+    position: relative;
+    top: 50%;
+    margin-top: -150px;
+}
+.registerintop p:nth-child(1){
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.registerintop p:nth-child(2){
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+     margin-bottom: 36px;
+}
+.registerintop p:nth-child(2) a{
+    color: #3481cf;
+   
+}
+#msg{
+    font-size: #000;
+    padding-left: 260px;
+}
+#username,#userpass{
+    display: block;
+    width: 258px;
+    height: 18px;
+    border-radius: 4px;
+
+    margin: 5px auto 10px;
+    padding: 10px 0 10px 10px;
+    line-height: 18px;
+    border: 1px solid #9f9f9f;
+    background: 0 0;
+    color: #333;
+    font-size: 16px;
+    text-indent: 20px;
+}
+#btnLogin{
+    display: block;
+    height: 40px;
+    width: 270px;
+    margin: 0 auto;
+    font-weight: 400;
+    padding: 10px 0 10px 10px;
+    background-color: #86CE2F;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.registerinbot{
+    height: 16px;
+    margin-bottom: 8px;
+    width: 100%;
+    
+    position: absolute;
+    bottom: 8px;
+
+    text-align: right;
+    font-size: 12px;
+}
+.registerinbot a{
+    color: #000;
+}
+#welcomeBox{
+    display: none;
+}
+// 购物车小计
+.subtotal {
+    display: inline-block;
+    width: 45px;
+}
+.tdleft{
+    float: left;
+    padding-left: 50px;
+}

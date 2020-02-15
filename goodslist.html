@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品列表</title>
+    <link rel="icon" href="img/lo.ico" type="images/x-ico" />
+    <link rel="stylesheet" href="css/foot.css">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/goodslist.css">
+</head>
+<body>
+    <!-- 登录注册 -->
+    <div class="registerin clear">
+        <button id="btnclose">×</button>
+        <div class="registerintop">
+                <p>账号密码登录</p>
+                <p>推荐使用<a href="">快速安全登录</a>，防止盗号。</p>
+                <span id="msg"></span>
+                <input type="text" id="username" placeholder="支持QQ号/邮箱/手机号登录">
+                <input type="text" id="userpass" placeholder="密码">
+                <input type="text" id="btnLogin" value="登录">
+
+        </div>
+        <div class="registerinbot">
+            <a href="">&nbsp;忘了密码？&nbsp;</a>|<a href="reg.html">&nbsp;注册新账号&nbsp;</a>|<a
+                href="">&nbsp;意见反馈&nbsp;&nbsp;</a>
+        </div>
+    </div>
+    <div class="over"></div>
+    <!-- 顶部导航 -->
+    <div class="topnav">
+    </div>
+    <div class="contbox">
+        <!-- 通用主题栏 -->
+        <div class="menu">
+            <!-- 搜索栏 -->
+            <div class="nav-search">
+                <!-- 左边logo -->
+                <div class="logobox">
+                    <a class="navico" href=""></a>
+                </div>
+                <!-- 输入框 -->
+                <div class="navico soso">
+                    <div class="txt">
+                        <a class="navico" href=""></a>
+                        <input class="qiehuan" type="text" placeholder="输入道具进行搜索">
+                    </div>
+                </div>
+                <!-- 右边logo -->
+                <div class="logogame">
+                    <a class="navico" href=""></a>
+                </div>
+            </div>
+            <!-- 主导航栏 -->
+            <div class="navindex navico">
+                <!-- 左边导航 -->
+                <ul class="navl">
+                    <li class="navico"><a class="orange1" href="index.html">首页</a></li>
+                    <li class="navico"><a class="orange1" href="goodslist.html">商品列表</a></li>
+                    <li class="navico"><a class="orange1" href="activity.html">活动专区</a></li>
+                    <li class="navico"><a class="orange1" href="">限时折扣</a></li>
+                    <li class="navico"><a class="orange1" href="">聚豆乐园</a></li>
+                    <li class="navico"><a class="orange1" href="">周边商城</a></li>
+                    <li class="navico"><a class="orange1" href="">个人中心</a></li>
+                </ul>
+                <!-- 购物车 -->
+                <div class="car">
+                    <a href="car.html">
+                        <i></i>
+                        <span class="navico"></span>
+                        购物车
+                    </a>
+                </div>
+            </div>
+            <!-- 子导航栏 -->
+            <div class="subnav">
+                <ul class="subnavlistbox">
+                    <li class="sublistall"><a class="write" href="">全部分类</a></li>
+                    <li class="sublist"><a class="write" href="">英雄</a></li>
+                    <li class="sublist"><a class="write" href="">表情</a></li>
+                    <li class="sublist"><a class="write" href="">海克斯及其他</a></li>
+                    <li class="sublist"><a class="write" href="">云顶之弈</a></li>
+                    <li class="sublist"><a class="write" href="">皮肤</a></li>
+                    <li class="sublist"><a class="write" href="">道具</a></li>
+                    <li class="sublist"><a class="write" href="">守卫眼皮肤</a></li>
+                    <li class="sublist"><a class="write" href="">道具包</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="location-box">
+        您现在的位置：<a href="">英雄联盟</a>&nbsp;>&nbsp;<a href="">全部分类</a>
+    </div>
+    <!-- 中间内容 -->
+    <div class="content clear">
+        <!-- 左边 -->
+        <div class="sidebar fl">
+            <div class="hotcont">
+                <h3 class="subin-tit">热门排行<span></span></h3>
+                <ul class="ranklist">
+                    <li>
+                        <a href="details.html" class="">
+                            <div class="comico">01</div>
+                            <img class="djimg" src="img/20170216_28862_2202.jpg" alt="">
+                            <div class="djinfo fr">
+                                <p class="djname1 tline green1">腥红之月 烬</p>
+                                <p class="djpriceq">Q币价：20 Q币</p>
+                                <p class="djpricew">微信价：<strong>￥19.40 </strong></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="details.html" class="">
+                            <div class="comico">02</div>
+                            <img class="djimg" src="img/121003_190.jpg" alt="">
+                            <div class="djinfo fr">
+                                <p class="djname1 tline green1">腥红之月 烬</p>
+                                <p class="djpriceq">Q币价：20 Q币</p>
+                                <p class="djpricew">微信价：<strong>￥19.40 </strong></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="details.html" class="">
+                            <div class="comico">03</div>
+                            <img class="djimg" src="img/20150715220820_82148.jpg" alt="">
+                            <div class="djinfo fr">
+                                <p class="djname1 tline green1">腥红之月 烬</p>
+                                <p class="djpriceq">Q币价：20 Q币</p>
+                                <p class="djpricew">微信价：<strong>￥19.40 </strong></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="details.html" class="">
+                            <div class="comico">04</div>
+                            <img class="djimg" src="img/20170315_0_5169.jpg" alt="">
+                            <div class="djinfo fr">
+                                <p class="djname1 tline green1">腥红之月 烬</p>
+                                <p class="djpriceq">Q币价：20 Q币</p>
+                                <p class="djpricew">微信价：<strong>￥19.40 </strong></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="details.html" class="">
+                            <div class="comico">05</div>
+                            <img class="djimg" src="img/20170216_28862_2202.jpg" alt="">
+                            <div class="djinfo fr">
+                                <p class="djname1 tline green1">腥红之月 烬</p>
+                                <p class="djpriceq">Q币价：20 Q币</p>
+                                <p class="djpricew">微信价：<strong>￥19.40 </strong></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="details.html" class="">
+                            <div class="comico">06</div>
+                            <img class="djimg" src="img/121003_190.jpg" alt="">
+                            <div class="djinfo fr">
+                                <p class="djname1 tline green1">腥红之月 烬</p>
+                                <p class="djpriceq">Q币价：20 Q币</p>
+                                <p class="djpricew">微信价：<strong>￥19.40 </strong></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="details.html" class="">
+                            <div class="comico">07</div>
+                            <img class="djimg" src="img/20150715220820_82148.jpg" alt="">
+                            <div class="djinfo fr">
+                                <p class="djname1 tline green1">腥红之月 烬</p>
+                                <p class="djpriceq">Q币价：20 Q币</p>
+                                <p class="djpricew">微信价：<strong>￥19.40 </strong></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="details.html" class="">
+                            <div class="comico">08</div>
+                            <img class="djimg" src="img/20170315_0_5169.jpg" alt="">
+                            <div class="djinfo fr">
+                                <p class="djname1 tline green1">腥红之月 烬</p>
+                                <p class="djpriceq">Q币价：20 Q币</p>
+                                <p class="djpricew">微信价：<strong>￥19.40 </strong></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="details.html" class="">
+                            <div class="comico">09</div>
+                            <img class="djimg" src="img/121003_190.jpg" alt="">
+                            <div class="djinfo fr">
+                                <p class="djname1 tline green1">腥红之月 烬</p>
+                                <p class="djpriceq">Q币价：20 Q币</p>
+                                <p class="djpricew">微信价：<strong>￥19.40 </strong></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="details.html" class="">
+                            <div class="comico">10</div>
+                            <img class="djimg" src="img/20150715220820_82148.jpg" alt="">
+                            <div class="djinfo fr">
+                                <p class="djname1 tline green1">腥红之月 烬</p>
+                                <p class="djpriceq">Q币价：20 Q币</p>
+                                <p class="djpricew">微信价：<strong>￥19.40 </strong></p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hotcont">
+                <h3 class="subin-tit">热门排行<span></span></h3>
+                <ul class="zbcont">
+                    <li>
+                        <a class="link" href="">
+                            <img src="img/20190711144944_32460.jpg" alt="">
+                            <p class="linkp">泳池派对迷你手办套装</p>
+                            <b>￥220.00</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="">
+                            <img src="img/20190215000044_23530.jpg" alt="">
+                            <p class="linkp">泳池派对迷你手办套装</p>
+                            <b>￥220.00</b>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="link" href="">
+                            <img src="img/20190711144944_32460.jpg" alt="">
+                            <p class="linkp">泳池派对迷你手办套装</p>
+                            <b>￥220.00</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="">
+                            <img src="img/20190215000147_16850.jpg" alt="">
+                            <p class="linkp">泳池派对迷你手办套装</p>
+                            <b>￥220.00</b>
+                        </a>
+                        <a href="" style="padding-left: 150px;">更多></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 右边 -->
+        <div class="maincont fr">
+            <div class="filter-box">
+                <div class="filteritem">
+                    关键字：<input type="text" name="" id="">
+                    价格区间(QB)：<input type="text">- <input type="text">
+                    <button>确定</button>
+                </div>
+                <div class="filterlist">
+                    <p>
+                        <a href="">上架时间</a>
+                        <a href="">销量<i></i></a>
+                        <a href="">价格<i></i></a>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="" id="">显示未拥有
+                        <input type="checkbox" name="" id="">显示已拥有
+                    </p>
+                </div>
+            </div>
+            <!-- 商品列表 -->
+            <div class="listgoods">
+                <ul class="platelist clear">
+                    <!-- <li>
+                        <a class="imgtop" href=""><img src="img/good1.jpg" alt=""></a>
+                        <div class="imgbot">
+                            <a href=""><strong>糖果大战 布隆 奶酪夹心饼</strong></a>
+                            <p>Q币价：<span>20 Q币</span></p>
+                            <p>微信价：<span> ¥&nbsp;19.40</span></p>
+                            <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="imgtop" href=""><img src="img/good1.jpg" alt=""></a>
+                        <div class="imgbot">
+                            <a href=""><strong>糖果大战 布隆 奶酪夹心饼</strong></a>
+                            <p>Q币价：<span>20 Q币</span></p>
+                            <p>微信价：<span> ¥&nbsp;19.40</span></p>
+                            <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="imgtop" href=""><img src="img/good1.jpg" alt=""></a>
+                        <div class="imgbot">
+                            <a href=""><strong>糖果大战 布隆 奶酪夹心饼</strong></a>
+                            <p>Q币价：<span>20 Q币</span></p>
+                            <p>微信价：<span> ¥&nbsp;19.40</span></p>
+                            <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="imgtop" href=""><img src="img/good1.jpg" alt=""></a>
+                        <div class="imgbot">
+                            <a href=""><strong>糖果大战 布隆 奶酪夹心饼</strong></a>
+                            <p>Q币价：<span>20 Q币</span></p>
+                            <p>微信价：<span> ¥&nbsp;19.40</span></p>
+                            <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="imgtop" href=""><img src="img/good1.jpg" alt=""></a>
+                        <div class="imgbot">
+                            <a href=""><strong>糖果大战 布隆 奶酪夹心饼</strong></a>
+                            <p>Q币价：<span>20 Q币</span></p>
+                            <p>微信价：<span> ¥&nbsp;19.40</span></p>
+                            <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a class="imgtop" href=""><img src="img/good2.jpg" alt=""></a>
+                        <div class="imgbot">
+                            <a href=""><strong>糖果大战 布隆 奶酪夹心饼</strong></a>
+                            <p>Q币价：<span>20 Q币</span></p>
+                            <p>微信价：<span> ¥&nbsp;19.40</span></p>
+                            <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="imgtop" href=""><img src="img/good3.jpg" alt=""></a>
+                        <div class="imgbot">
+                            <a href=""><strong>糖果大战 布隆 奶酪夹心饼</strong></a>
+                            <p>Q币价：<span>20 Q币</span></p>
+                            <p>微信价：<span> ¥&nbsp;19.40</span></p>
+                            <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="imgtop" href=""><img src="img/good4.jpg" alt=""></a>
+                        <div class="imgbot">
+                            <a href=""><strong>糖果大战 布隆 奶酪夹心饼</strong></a>
+                            <p>Q币价：<span>20 Q币</span></p>
+                            <p>微信价：<span> ¥&nbsp;19.40</span></p>
+                            <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="imgtop" href=""><img src="img/good5.jpg" alt=""></a>
+                        <div class="imgbot">
+                            <a href=""><strong>糖果大战 布隆 奶酪夹心饼</strong></a>
+                            <p>Q币价：<span>20 Q币</span></p>
+                            <p>微信价：<span> ¥&nbsp;19.40</span></p>
+                            <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="imgtop" href=""><img src="img/good6.jpg" alt=""></a>
+                        <div class="imgbot">
+                            <a href=""><strong>糖果大战 布隆 奶酪夹心饼</strong></a>
+                            <p>Q币价：<span>20 Q币</span></p>
+                            <p>微信价：<span> ¥&nbsp;19.40</span></p>
+                            <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="imgtop" href=""><img src="img/good7.jpg" alt=""></a>
+                        <div class="imgbot">
+                            <a href=""><strong>糖果大战 布隆 奶酪夹心饼</strong></a>
+                            <p>Q币价：<span>20 Q币</span></p>
+                            <p>微信价：<span> ¥&nbsp;19.40</span></p>
+                            <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="imgtop" href=""><img src="img/good8.jpg" alt=""></a>
+                        <div class="imgbot">
+                            <a href=""><strong>糖果大战 布隆 奶酪夹心饼</strong></a>
+                            <p>Q币价：<span>20 Q币</span></p>
+                            <p>微信价：<span> ¥&nbsp;19.40</span></p>
+                            <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="imgtop" href=""><img src="img/good9.jpg" alt=""></a>
+                        <div class="imgbot">
+                            <a href=""><strong>糖果大战 布隆 奶酪夹心饼</strong></a>
+                            <p>Q币价：<span>20 Q币</span></p>
+                            <p>微信价：<span> ¥&nbsp;19.40</span></p>
+                            <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="imgtop" href=""><img src="img/good10.jpg" alt=""></a>
+                        <div class="imgbot">
+                            <a href=""><strong>糖果大战 布隆 奶酪夹心饼</strong></a>
+                            <p>Q币价：<span>20 Q币</span></p>
+                            <p>微信价：<span> ¥&nbsp;19.40</span></p>
+                            <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="imgtop" href=""><img src="img/good11.jpg" alt=""></a>
+                        <div class="imgbot">
+                            <a href=""><strong>糖果大战 布隆 奶酪夹心饼</strong></a>
+                            <p>Q币价：<span>20 Q币</span></p>
+                            <p>微信价：<span> ¥&nbsp;19.40</span></p>
+                            <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="imgtop" href=""><img src="img/good12.jpg" alt=""></a>
+                        <div class="imgbot">
+                            <a href=""><strong>糖果大战 布隆 奶酪夹心饼</strong></a>
+                            <p>Q币价：<span>20 Q币</span></p>
+                            <p>微信价：<span> ¥&nbsp;19.40</span></p>
+                            <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="imgtop" href=""><img src="img/good13.jpg" alt=""></a>
+                        <div class="imgbot">
+                            <a href=""><strong>糖果大战 布隆 奶酪夹心饼</strong></a>
+                            <p>Q币价：<span>20 Q币</span></p>
+                            <p>微信价：<span> ¥&nbsp;19.40</span></p>
+                            <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="imgtop" href=""><img src="img/good14.jpg" alt=""></a>
+                        <div class="imgbot">
+                            <a href=""><strong>糖果大战 布隆 奶酪夹心饼</strong></a>
+                            <p>Q币价：<span>20 Q币</span></p>
+                            <p>微信价：<span> ¥&nbsp;19.40</span></p>
+                            <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="imgtop" href=""><img src="img/good15.jpg" alt=""></a>
+                        <div class="imgbot">
+                            <a href=""><strong>糖果大战 布隆 奶酪夹心饼</strong></a>
+                            <p>Q币价：<span>20 Q币</span></p>
+                            <p>微信价：<span> ¥&nbsp;19.40</span></p>
+                            <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="imgtop" href=""><img src="img/good16.jpg" alt=""></a>
+                        <div class="imgbot">
+                            <a href=""><strong>糖果大战 布隆 奶酪夹心饼</strong></a>
+                            <p>Q币价：<span>20 Q币</span></p>
+                            <p>微信价：<span> ¥&nbsp;19.40</span></p>
+                            <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+            <!-- 分页效果 -->
+            <div class="page-box">
+                <button class="prev"><i></i> 上一页</button>
+                <span class="pagenum">
+                    <a href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                    <a href="">5</a>
+                </span>
+                <button class="next">下一页<i></i></button>
+                <span class="gotopage">共<em>82</em>页&nbsp;到第<input type="text">页</span>
+                <button>确定</button>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="foot ">
+    </div>
+    <!-- 返回顶部 -->
+    <div class="fixednav">
+        <a class="go-top" href="javascript:"><span></span>返回顶部</a>
+        <a href="">反馈</a>
+    </div>
+
+    <!-- 加入购物车 -->
+
+    <div class="addgoodscar">
+        <div class="goodstit clear">
+            <h2 class="">加入购物车</h2>
+            <button class="btnclose">×</button>
+        </div>
+        <div class="goodsbot">
+            <div class="goodsleft">
+                <img src="img/2-64011-9.jpg" alt="">
+                <p>王国机神玄武 盖伦 完全体</p>
+            </div>
+            <div class="goodsright">
+                <p>价格：<span>149</span>Q币</p>
+                <p>期限：<span>永久</span></p>
+                <button class="btnsend">确定</button>
+                <span class="goodsbotid" style="display: none;"></span>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/cookieTools.js"></script>
+<script src="js/goodslist.js"></script>

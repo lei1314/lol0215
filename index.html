@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lol</title>
+    <link rel="icon" href="img/lo.ico" type="images/x-ico" />
+    <link rel="stylesheet" href="css/foot.css">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/clear.css">
+</head>
+<body>
+    <!-- 登录时显示的最大的遮罩层 -->
+    <div class="over"></div>
+    <!-- 登录注册 -->
+    <div class="registerin clear">
+        <button id="btnclose">×</button>
+        <div class="registerintop">
+                <p>账号密码登录</p>
+                <p>推荐使用<a href="">快速安全登录</a>，防止盗号。</p>
+                <span id="msg"></span>
+                <input type="text" id="username" placeholder="支持QQ号/邮箱/手机号登录">
+                <input type="text" id="userpass" placeholder="密码">
+                <input type="text" id="btnLogin" value="登录">
+        </div>
+        <div class="registerinbot">
+            <a href="">&nbsp;忘了密码？&nbsp;</a>|<a href="reg.html">&nbsp;注册新账号&nbsp;</a>|<a
+                href="">&nbsp;意见反馈&nbsp;&nbsp;</a>
+        </div>
+    </div>
+    <div class="page clear">
+        <div class="pagecont">
+            <!-- 顶部导航 -->
+            <div class="topnav">
+            </div>
+            <!-- 通用主题栏 -->
+            <div class="menu">
+                <!-- 搜索栏 -->
+                <div class="nav-search">
+                    <!-- 左边logo -->
+                    <div class="logobox">
+                        <a class="navico" href=""></a>
+                    </div>
+                    <!-- 输入框 -->
+                    <div class="navico soso">
+                        <div class="txt">
+                            <a class="navico" href=""></a>
+                            <input class="qiehuan" type="text" placeholder="输入道具进行搜索">
+                        </div>
+                    </div>
+                    <!-- 右边logo -->
+                    <div class="logogame">
+                        <a class="navico" href=""></a>
+                    </div>
+                </div>
+                <!-- 主导航栏 -->
+                <div class="navindex navico">
+                    <!-- 左边导航 -->
+                    <ul class="fl">
+                        <li class="navico navsy"><a href="index.html">首页</a></li>
+                        <li class="navico"><a class="orange1" href="goodslist.html">商品列表</a></li>
+                        <li class="navico"><a class="orange1" href="activity.html">活动专区</a></li>
+                        <li class="navico"><a class="orange1" href="">限时折扣</a></li>
+                        <li class="navico"><a class="orange1" href="">聚豆乐园</a></li>
+                        <li class="navico"><a class="orange1" href="">周边商城</a></li>
+                        <li class="navico"><a class="orange1" href="">个人中心</a></li>
+                    </ul>
+                    <!-- 购物车 -->
+                    <div class="car">
+                        <a href="car.html">
+                            <i></i>
+                            <span class="navico"></span>
+                            购物车
+                        </a>
+                    </div>
+                </div>
+                <!-- 子导航栏 -->
+                <div class="subnav">
+                    <ul class="subnavlistbox">
+                        <li class="sublistall"><a class="write" href="">全部分类</a></li>
+                        <li class="sublist"><a class="write" href="">英雄</a></li>
+                        <li class="sublist"><a class="write" href="">表情</a></li>
+                        <li class="sublist"><a class="write" href="">海克斯及其他</a></li>
+                        <li class="sublist"><a class="write" href="">云顶之弈</a></li>
+                        <li class="sublist"><a class="write" href="">皮肤</a></li>
+                        <li class="sublist"><a class="write" href="">道具</a></li>
+                        <li class="sublist"><a class="write" href="">守卫眼皮肤</a></li>
+                        <li class="sublist"><a class="write" href="">道具包</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 登陆栏和广告栏 -->
+            <div class="mainer clear">
+                <!-- 左侧登录栏 -->
+                <div class="leftreg">
+                    <div class="regt">
+                        <div class="per">
+                            <div class="perreg ">
+                                <img class="userimg" src="img/default.gif" alt="">
+                                <p>您还未登录哦，<a class="reginin" href="javascript:"
+                                        style="color: mediumblue;">立即登录</a><br>购买超值商品！</p>
+                            </div>
+                            <div class="succeed" style="display: none;">
+                                <img class="userimg" src="img/meqq.jpg" alt="">
+                                <p class="userSpan"></p><i class="dou">0</i>
+                                <br>
+                                <span class="mvpn"></span><b></b>
+                            </div>
+                        </div>
+                        <div class="collegebox">
+                            <div class="clearfix">
+                                <p class="coll-tag">当前未绑定角色</p>
+                            </div>
+                            <a class="change" href="">立即绑定></a>
+                        </div>
+                        <ul class="leginul">
+                            <li><a class="tline green1" href=""><span class="ico1 icox "></span>我的优惠券</a></li>
+                            <li><a class="tline green1" href=""><span class="ico2 icox "></span>查询Q币Q点余额</a></li>
+                        </ul>
+                    </div>
+                    <!-- 公告栏 -->
+                    <div class="regb">
+                        <div class="titbox">
+                            <h5>公告</h5>
+                            <a class="tline" href="">更多></a>
+                        </div>
+                        <ul class="gglist">
+                            <li><a class="tline" href="">支付异常公告</a><span>01/03</span></li>
+                            <li><a class="tline" href="">LOL商城购买异常公告</a><span>11/22</span></li>
+                            <li><a class="tline" href="">端游抽奖嘉年华活动盛大启幕——你许愿，我买单</a><span>11/08</span></li>
+                            <li><a class="tline" href="">道聚城7周年瓜分百万Q币奖励，还有超低价道具等你来拿！</a><span>09/17</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 轮播图 -->
+                <div class="banner">
+                    <div class="imgList">
+                        <img src="img/0.jpg">
+                        <img src="img/1.jpg">
+                        <img src="img/2.jpg">
+                        <img src="img/3.jpg">
+                    </div>
+                    <ul class="dollList">
+                        <span class="hover">弗雷尔卓德 塞拉斯</span>
+                        <span>英雄联盟盲盒</span>
+                        <span>征程2020精选皮肤限时半价</span>
+                        <span>海克斯科技斯维因</span>
+                    </ul>
+                </div>
+                <!-- 右侧链接栏 -->
+                <div class="rightlink">
+                    <a class="indexico icot hd" href="">活动中心</a>
+                    <a class="indexico icoc hd" href="">聚豆商城</a>
+                    <div class="indexico icob">
+                        <img src="img/code-index.png" alt="">
+                        <p>手机购买，更便捷</p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- 列表区 -->
+            <div class="list-cont clear">
+                <!-- 限时抢购 -->
+                <div class="likebox clear">
+                    <h3 class="tittime fl">限时抢购<span class="greenline"></span></h3>
+                    <div class="morebox"><a href="">更多></a></div>
+                    <ul>
+                        <!-- <li class="opct">
+                            <div class="likediv">
+                                <p class="zj">直降<b>49.50Q币</b></p>
+                                <a href="details.html"><img src="img/2-24013-9.jpg" alt=""></a>
+                                <p class="djname"><a href="">神王 德莱厄斯</a></p>
+                                <p class="orange">
+                                    <strong>49.50</strong>元
+                                    <del>(99QB)</del>
+                                </p>
+                                <p>剩余时间: <span class="hour">24</span>时<span class="min">00</span>分<span
+                                        class="ss">00</span>秒 </p>
+                                <a class="btncom dr" href="javascript:">立即购买</a>
+                            </div>
+                        </li>
+                        <li class="opct">
+                            <div class="likediv">
+                                <p class="zj">直降<b>49.50Q币</b></p>
+                                <a href="details.html"><img src="img/2-28008-.jpg" alt=""></a>
+                                <p class="djname"><a href="">源计划：雷 卢锡安</a></p>
+                                <p class="orange">
+                                    <strong>39.50</strong>元
+                                    <del>(99QB)</del>
+                                </p>
+                                <p>剩余时间: <span class="hour">24</span>时<span class="min">00</span>分<span
+                                        class="ss">00</span>秒 </p>
+
+                                <a class="btncom dr" href="javascript:">立即购买</a>
+                            </div>
+                        </li>
+                        <li class="opct">
+                            <div class="likediv">
+                                <p class="zj">直降<b>49.50Q币</b></p>
+                                <a href="details.html"><img src="img/2-64011-9.jpg" alt=""></a>
+                                <p class="djname"><a href="">源计划：阴 劫</a></p>
+                                <p class="orange">
+                                    <strong>49.50</strong>元
+                                    <del>(99QB)</del>
+                                </p>
+                                <p>剩余时间: <span class="hour">24</span>时<span class="min">00</span>分<span
+                                        class="ss">00</span>秒 </p>
+
+                                <a class="btncom dr" href="javascript:">立即购买</a>
+                            </div>
+                        </li>
+                        <li class="opct">
+                            <div class="likediv">
+                                <p class="zj">直降<b>49.50Q币</b></p>
+                                <a href="details.html"><img src="img/2-86013-9.jpg" alt=""></a>
+                                <p class="djname"><a href="">源计划：林 易</a></p>
+                                <p class="orange">
+                                    <strong>49.50</strong>元
+                                    <del>(99QB)</del>
+                                </p>
+                                <p>剩余时间: <span class="hour">24</span>时<span class="min">00</span>分<span
+                                        class="ss">00</span>秒 </p>
+
+                                <a class="btncom dr" href="javascript:">立即购买</a>
+                            </div>
+                        </li>
+                        <li class="opct">
+                            <div class="likediv">
+                                <p class="zj">直降<b>49.50Q币</b></p>
+                                <a href="details.html"><img src="img/2-24013-9.jpg" alt=""></a>
+                                <p class="djname"><a href="">源计划：火 菲奥娜</a></p>
+                                <p class="orange">
+                                    <strong>49.50</strong>元
+                                    <del>(99QB)</del>
+                                </p>
+                                <p>剩余时间: <span class="hour">24</span>时<span class="min">00</span>分<span
+                                        class="ss">00</span>秒 </p>
+                                <a class="btncom dr" href="javascript:">立即购买</a>
+                            </div>
+                        </li>
+                        <li class="opct">
+                            <div class="likediv">
+                                <p class="zj">直降<b>49.50Q币</b></p>
+                                <a href="details.html"><img src="img/2-89011-9.jpg" alt=""></a>
+                                <p class="djname"><a href="">神王 德莱厄斯</a></p>
+                                <p class="orange">
+                                    <strong>49.50</strong>元
+                                    <del>(99QB)</del>
+                                </p>
+                                <p>剩余时间: <span class="hour">24</span>时<span class="min">00</span>分<span
+                                        class="ss">00</span>秒 </p>
+                                <a class="btncom dr" href="javascript:">立即购买</a>
+                            </div>
+                        </li>
+                        <li class="opct">
+                            <div class="likediv">
+                                <p class="zj">直降<b>49.50Q币</b></p>
+                                <a href="details.html"><img src="img/2-92016-9.jpg" alt=""></a>
+                                <p class="djname"><a href="javascript:">神王 德莱厄斯</a></p>
+                                <p class="orange">
+                                    <strong>49.50</strong>元
+                                    <del>(99QB)</del>
+                                </p>
+                                <p>剩余时间: <span class="hour">24</span>时<span class="min">00</span>分<span
+                                        class="ss">00</span>秒 </p>
+
+                                <a class="btncom dr" href="javascript:">立即购买</a>
+                            </div>
+                        </li>
+                        <li class="opct">
+                            <div class="likediv">
+                                <p class="zj">直降<b>49.50Q币</b></p>
+                                <a href="details.html"><img src="img/2-201024-.jpg" alt=""></a>
+                                <p class="djname"><a href="">神王 德莱厄斯</a></p>
+                                <p class="orange">
+                                    <strong>49.50</strong>元
+                                    <del>(99QB)</del>
+                                </p>
+                                <p>剩余时间: <span class="hour">24</span>时<span class="min">00</span>分<span
+                                        class="ss">00</span>秒 </p>
+
+                                <a class="btncom dr" href="javascript:">立即购买</a>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+                <!-- 新品上架 -->
+                <div class="hotbox clear">
+                    <div class="hotleft">
+                        <div class="hottit">
+                            <a href="" class="tit1">新品上架</a>
+                            <a href="" class="tit2">热门推荐</a>
+                            <a href="" class="tit3">更多></a>
+                        </div>
+                        <div class="platebox">
+                            <ul class="platelist clear">
+                                <!-- <li>
+                                    <a class="imgtop" href="details.html"><img src="img/2-517008-.jpg" alt=""></a>
+                                    <div class="imgbot">
+                                        <a href=""><strong>弗雷尔卓德 塞拉斯</strong></a>
+                                        <p>Q币价：<span>79.00 Q币</span></p>
+                                        <p>微信价：<strong> ¥&nbsp;76.63</strong></p>
+                                        <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="imgtop" href="details.html"><img src="img/2-28008-.jpg" alt=""></a>
+                                    <div class="imgbot">
+                                        <a href=""><strong>弗雷尔卓德 塞拉斯</strong></a>
+                                        <p>Q币价：<span>79.00 Q币</span></p>
+                                        <p>微信价：<strong> ¥&nbsp;76.63</strong></p>
+                                        <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="imgtop" href="details.html"><img src="img/2-201024-.jpg" alt=""></a>
+                                    <div class="imgbot">
+                                        <a href=""><strong>弗雷尔卓德 塞拉斯</strong></a>
+                                        <p>Q币价：<span>79.00 Q币</span></p>
+                                        <p>微信价：<strong> ¥&nbsp;76.63</strong></p>
+                                        <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="imgtop" href="details.html"><img src="img/2-157009-9.jpg" alt=""></a>
+                                    <div class="imgbot">
+                                        <a href=""><strong>弗雷尔卓德 塞拉斯</strong></a>
+                                        <p>Q币价：<span>79.00 Q币</span></p>
+                                        <p>微信价：<strong> ¥&nbsp;76.63</strong></p>
+                                        <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="imgtop" href="details.html"><img src="img/2-122015-9.jpg" alt=""></a>
+                                    <div class="imgbot">
+                                        <a href=""><strong>弗雷尔卓德 塞拉斯</strong></a>
+                                        <p>Q币价：<span>79.00 Q币</span></p>
+                                        <p>微信价：<strong> ¥&nbsp;76.63</strong></p>
+                                        <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="imgtop" href="details.html"><img src="img/2-92016-9.jpg" alt=""></a>
+                                    <div class="imgbot">
+                                        <a href=""><strong>弗雷尔卓德 塞拉斯</strong></a>
+                                        <p>Q币价：<span>79.00 Q币</span></p>
+                                        <p>微信价：<strong> ¥&nbsp;76.63</strong></p>
+                                        <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="imgtop" href="details.html"><img src="img/2-89011-9.jpg" alt=""></a>
+                                    <div class="imgbot">
+                                        <a href=""><strong>弗雷尔卓德 塞拉斯</strong></a>
+                                        <p>Q币价：<span>79.00 Q币</span></p>
+                                        <p>微信价：<strong> ¥&nbsp;76.63</strong></p>
+                                        <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="imgtop" href="details.html"><img src="img/2-89010-9.jpg" alt=""></a>
+                                    <div class="imgbot">
+                                        <a href=""><strong>弗雷尔卓德 塞拉斯</strong></a>
+                                        <p>Q币价：<span>79.00 Q币</span></p>
+                                        <p>微信价：<strong> ¥&nbsp;76.63</strong></p>
+                                        <p class="pt dr"><a href="javascript:">立即购买</a> </p>
+                                    </div>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 热门排行 -->
+                    <div class="hotright">
+                        <div class="sbcont">
+                            <h3 class="subin-tit">热门排行<span></span></h3>
+                            <ul class="ranklist ranklist1">
+                                <!-- <li>
+                                    <a href="details.html" class="">
+                                        <div class="comico">01</div>
+                                        <img class="djimg" src="img/20170216_28862_2202.jpg" alt="">
+                                        <div class="djinfo fr">
+                                            <p class="djname1 tline green1">腥红之月 烬</p>
+                                            <p class="djpriceq">Q币价：79.00 Q币</p>
+                                            <p class="djpricew">微信价：<strong>￥76.63 </strong></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="details.html" class="">
+                                        <div class="comico">02</div>
+                                        <img class="djimg" src="img/121003_190.jpg" alt="">
+                                        <div class="djinfo fr">
+                                            <p class="djname1 tline green1">腥红之月 烬</p>
+                                            <p class="djpriceq">Q币价：79.00 Q币</p>
+                                            <p class="djpricew">微信价：<strong>￥76.63 </strong></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="details.html" class="">
+                                        <div class="comico">03</div>
+                                        <img class="djimg" src="img/20150715220820_82148.jpg" alt="">
+                                        <div class="djinfo fr">
+                                            <p class="djname1 tline green1">腥红之月 烬</p>
+                                            <p class="djpriceq">Q币价：79.00 Q币</p>
+                                            <p class="djpricew">微信价：<strong>￥76.63 </strong></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="details.html" class="">
+                                        <div class="comico">04</div>
+                                        <img class="djimg" src="img/20170315_0_5169.jpg" alt="">
+                                        <div class="djinfo fr">
+                                            <p class="djname1 tline green1">腥红之月 烬</p>
+                                            <p class="djpriceq">Q币价：79.00 Q币</p>
+                                            <p class="djpricew">微信价：<strong>￥76.63 </strong></p>
+                                        </div>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                        <div class="sbcont">
+                            <h3 class="subin-tit">猜你喜欢<span></span></h3>
+                            <ul class="ranklist ranklist2">
+                                <!-- <li>
+                                    <a href="details.html" class="">
+                                        <div class="comico">01</div>
+                                        <img class="djimg" src="img/20170216_28862_2202.jpg" alt="">
+                                        <div class="djinfo fr">
+                                            <p class="djname1 tline green1">腥红之月 烬</p>
+                                            <p class="djpriceq">Q币价：79.00 Q币</p>
+                                            <p class="djpricew">微信价：<strong>￥76.63 </strong></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="details.html" class="">
+                                        <div class="comico">02</div>
+                                        <img class="djimg" src="img/121003_190.jpg" alt="">
+                                        <div class="djinfo fr">
+                                            <p class="djname1 tline green1">腥红之月 烬</p>
+                                            <p class="djpriceq">Q币价：79.00 Q币</p>
+                                            <p class="djpricew">微信价：<strong>￥76.63 </strong></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="details.html" class="">
+                                        <div class="comico">03</div>
+                                        <img class="djimg" src="img/20150715220820_82148.jpg" alt="">
+                                        <div class="djinfo fr">
+                                            <p class="djname1 tline green1">腥红之月 烬</p>
+                                            <p class="djpriceq">Q币价：79.00 Q币</p>
+                                            <p class="djpricew">微信价：<strong>￥76.63 </strong></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="details.html" class="">
+                                        <div class="comico">04</div>
+                                        <img class="djimg" src="img/20170315_0_5169.jpg" alt="">
+                                        <div class="djinfo fr">
+                                            <p class="djname1 tline green1">腥红之月 烬</p>
+                                            <p class="djpriceq">Q币价：79.00 Q币</p>
+                                            <p class="djpricew">微信价：<strong>￥76.63 </strong></p>
+                                        </div>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- 照片墙 -->
+                <div class="adlist phototitle">
+                    <div class="zbtit">
+                        <a href="" class="tit1">&nbsp;&nbsp;照片墙</a>
+                        <a href="" class="tit3">更多></a>
+                    </div>
+                </div>
+                <div class="zblist photobox">
+                    <ul class="prodlist clear">
+                        <li>
+                            <a href="details.html">
+                                <img class="outline" src="img/p1.jpg" alt="">
+                                <div class="clear prod">
+                                    <p class="hred">悟空收藏版毛绒</p>
+                                    <span>￥108.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="details.html">
+                                <img class="outline" src="img/p2.jpg" alt="">
+                                <div class="clear prod">
+                                    <p class="hred">悟空收藏版毛绒</p>
+                                    <span>￥108.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="details.html">
+                                <img class="outline" src="img/p3.jpg" alt="">
+                                <div class="clear prod">
+                                    <p class="hred">悟空收藏版毛绒</p>
+                                    <span>￥108.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="details.html">
+                                <img class="outline" src="img/p4.jpg" alt="">
+                                <div class="clear prod">
+                                    <p class="hred">悟空收藏版毛绒</p>
+                                    <span>￥108.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="details.html">
+                                <img class="outline" src="img/p5.jpg" alt="">
+                                <div class="clear prod">
+                                    <p class="hred">悟空收藏版毛绒</p>
+                                    <span>￥108.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="details.html">
+                                <img class="outline" src="img/p6.jpg" alt="">
+                                <div class="clear prod">
+                                    <p class="hred">悟空收藏版毛绒</p>
+                                    <span>￥108.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="details.html">
+                                <img class="outline" src="img/p7.jpg" alt="">
+                                <div class="clear prod">
+                                    <p class="hred">悟空收藏版毛绒</p>
+                                    <span>￥108.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="details.html">
+                                <img class="outline" src="img/p8.jpg" alt="">
+                                <div class="clear prod">
+                                    <p class="hred">悟空收藏版毛绒</p>
+                                    <span>￥108.00</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 周边商城 -->
+                <div class="zblist clear">
+                    <div class="zbtit">
+                        <a href="" class="tit1">&nbsp;&nbsp;周边商城</a>
+                        <a href="" class="tit3">更多></a>
+                    </div>
+                    <div class="zblist pagebox">
+                        <input class="btnleft" type="button" value="<">
+                        <input class="btnright" type="button" value=">">
+
+                        <ul class="prodlist clear">
+
+                            <li>
+                                <a href="details.html">
+                                    <img class="outline" src="img/p1.jpg" alt="">
+                                    <div class="clear prod">
+                                        <p class="hred">悟空收藏版毛绒</p>
+                                        <span>￥108.00</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="details.html">
+                                    <img class="outline" src="img/p2.jpg" alt="">
+                                    <div class="clear prod">
+                                        <p class="hred">悟空收藏版毛绒</p>
+                                        <span>￥108.00</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="details.html">
+                                    <img class="outline" src="img/p3.jpg" alt="">
+                                    <div class="clear prod">
+                                        <p class="hred">悟空收藏版毛绒</p>
+                                        <span>￥108.00</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="details.html">
+                                    <img class="outline" src="img/p4.jpg" alt="">
+                                    <div class="clear prod">
+                                        <p class="hred">悟空收藏版毛绒</p>
+                                        <span>￥108.00</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="details.html">
+                                    <img class="outline" src="img/p5.jpg" alt="">
+                                    <div class="clear prod">
+                                        <p class="hred">悟空收藏版毛绒</p>
+                                        <span>￥108.00</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="details.html">
+                                    <img class="outline" src="img/p6.jpg" alt="">
+                                    <div class="clear prod">
+                                        <p class="hred">悟空收藏版毛绒</p>
+                                        <span>￥108.00</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="details.html">
+                                    <img class="outline" src="img/p7.jpg" alt="">
+                                    <div class="clear prod">
+                                        <p class="hred">悟空收藏版毛绒</p>
+                                        <span>￥108.00</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="details.html">
+                                    <img class="outline" src="img/p8.jpg" alt="">
+                                    <div class="clear prod">
+                                        <p class="hred">悟空收藏版毛绒</p>
+                                        <span>￥108.00</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="prodlist">
+                        <li>
+                            <a href="details.html">
+                                <img class="outline" src="img/20190805203057_46321.jpg" alt="">
+                                <div class="clear prod">
+                                    <p class="hred">悟空收藏版毛绒</p>
+                                    <span>￥108.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="details.html">
+                                <img class="outline" src="img/p1.jpg" alt="">
+                                <div class="clear prod">
+                                    <p class="hred">悟空收藏版毛绒</p>
+                                    <span>￥108.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="details.html">
+                                <img class="outline" src="img/20190310154345_71326.jpg" alt="">
+                                <div class="clear prod">
+                                    <p class="hred">悟空收藏版毛绒</p>
+                                    <span>￥108.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="details.html">
+                                <img class="outline" src="img/20180504171112_15219.jpg" alt="">
+                                <div class="clear prod">
+                                    <p class="hred">悟空收藏版毛绒</p>
+                                    <span>￥108.00</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="details.html">
+                                <img class="outline" src="img/20190805203057_46321.jpg" alt="">
+                                <div class="clear prod">
+                                    <p class="hred">悟空收藏版毛绒</p>
+                                    <span>￥108.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="details.html">
+                                <img class="outline" src="img/p1.jpg" alt="">
+                                <div class="clear prod">
+                                    <p class="hred">悟空收藏版毛绒</p>
+                                    <span>￥108.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="details.html">
+                                <img class="outline" src="img/20190310154345_71326.jpg" alt="">
+                                <div class="clear prod">
+                                    <p class="hred">悟空收藏版毛绒</p>
+                                    <span>￥108.00</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="details.html">
+                                <img class="outline" src="img/20180504171112_15219.jpg" alt="">
+                                <div class="clear prod">
+                                    <p class="hred">悟空收藏版毛绒</p>
+                                    <span>￥108.00</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- 精彩活动 -->
+                <div class="adlist clear">
+                    <div class="zbtit">
+                        <a href="" class="tit1">&nbsp;&nbsp;精彩活动</a>
+                        <a href="" class="tit3">更多></a>
+                    </div>
+                    <ul class="act-list">
+                        <li>
+                            <a href="">
+                                <div class="actimg">
+                                    <div class="game-name">英雄联盟</div>
+                                    <div class="game-status">
+                                        火爆<br>进行中
+                                    </div>
+                                    <img src="img/49040288718863.jpg" alt="">
+                                </div>
+                            </a>
+                            <div class="dips">
+                                <p class="game-tit">海克斯科技斯维因</p>
+                                <p class="time">活动时间：2020-01-07~2020-02-03</p>
+                                <div class="attention">
+                                    <span class="like"></span>
+                                    <span><strong>(6051)</strong></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="actimg">
+                                    <div class="game-name">英雄联盟</div>
+                                    <div class="game-status">
+                                        火爆<br>进行中
+                                    </div>
+                                    <img src="img/98706926344683.jpg" alt="">
+                                </div>
+                            </a>
+                            <div class="dips">
+                                <p class="game-tit">海克斯科技斯维因</p>
+                                <p class="time">活动时间：2020-01-07~2020-02-03</p>
+                                <div class="attention">
+                                    <span class="like"></span>
+                                    <span><strong>(6051)</strong></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="actimg">
+                                    <div class="game-name">英雄联盟</div>
+                                    <div class="game-status">
+                                        火爆<br>进行中
+                                    </div>
+                                    <img src="img/298771114241353.jpg" alt="">
+                                </div>
+                            </a>
+                            <div class="dips">
+                                <p class="game-tit">海克斯科技斯维因</p>
+                                <p class="time">活动时间：2020-01-07~2020-02-03</p>
+                                <div class="attention">
+                                    <span class="like"></span>
+                                    <span><strong>(6051)</strong></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="actimg">
+                                    <div class="game-name">英雄联盟</div>
+                                    <div class="game-status">
+                                        火爆<br>进行中
+                                    </div>
+                                    <img src="img/49040288718863.jpg" alt="">
+                                </div>
+                            </a>
+                            <div class="dips">
+                                <p class="game-tit">海克斯科技斯维因</p>
+                                <p class="time">活动时间：2020-01-07~2020-02-03</p>
+                                <div class="attention">
+                                    <span class="like"></span>
+                                    <span><strong>(6051)</strong></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="actimg">
+                                    <div class="game-name">英雄联盟</div>
+                                    <div class="game-status">
+                                        火爆<br>进行中
+                                    </div>
+                                    <img src="img/98706926344683.jpg" alt="">
+                                </div>
+                            </a>
+                            <div class="dips">
+                                <p class="game-tit">海克斯科技斯维因</p>
+                                <p class="time">活动时间：2020-01-07~2020-02-03</p>
+                                <div class="attention">
+                                    <span class="like"></span>
+                                    <span><strong>(6051)</strong></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="actimg">
+                                    <div class="game-name">英雄联盟</div>
+                                    <div class="game-status">
+                                        火爆<br>进行中
+                                    </div>
+                                    <img src="img/298771114241353.jpg" alt="">
+                                </div>
+                            </a>
+                            <div class="dips">
+                                <p class="game-tit">海克斯科技斯维因</p>
+                                <p class="time">活动时间：2020-01-07~2020-02-03</p>
+                                <div class="attention">
+                                    <span class="like"></span>
+                                    <span><strong>(6051)</strong></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="actimg">
+                                    <div class="game-name">英雄联盟</div>
+                                    <div class="game-status">
+                                        火爆<br>进行中
+                                    </div>
+                                    <img src="img/49040288718863.jpg" alt="">
+                                </div>
+                            </a>
+                            <div class="dips">
+                                <p class="game-tit">海克斯科技斯维因</p>
+                                <p class="time">活动时间：2020-01-07~2020-02-03</p>
+                                <div class="attention">
+                                    <span class="like"></span>
+                                    <span><strong>(6051)</strong></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="actimg">
+                                    <div class="game-name">英雄联盟</div>
+                                    <div class="game-status">
+                                        火爆<br>进行中
+                                    </div>
+                                    <img src="img/98706926344683.jpg" alt="">
+                                </div>
+                            </a>
+                            <div class="dips">
+                                <p class="game-tit">海克斯科技斯维因</p>
+                                <p class="time">活动时间：2020-01-07~2020-02-03</p>
+                                <div class="attention">
+                                    <span class="like"></span>
+                                    <span><strong>(6051)</strong></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="actimg">
+                                    <div class="game-name">英雄联盟</div>
+                                    <div class="game-status">
+                                        火爆<br>进行中
+                                    </div>
+                                    <img src="img/298771114241353.jpg" alt="">
+                                </div>
+                            </a>
+                            <div class="dips">
+                                <p class="game-tit">海克斯科技斯维因</p>
+                                <p class="time">活动时间：2020-01-07~2020-02-03</p>
+                                <div class="attention">
+                                    <span class="like"></span>
+                                    <span><strong>(6051)</strong></span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="foot ">
+    </div>
+    <!-- 返回顶部 -->
+    <div class="fixednav">
+        <a href="javascript:">限时抢购</a>
+        <a href="javascript:">新品上架</a>
+        <a href="javascript:">周边商城</a>
+        <a href="javascript:">精彩活动</a>
+        <a class="go-top" href="javascript:">返回顶部</a>
+        <a href="">反馈</a>
+    </div>
+    <!-- 加入购物车 -->
+    <div class="addgoodscar">
+        <div class="goodstit clear">
+            <h2 class="">加入购物车</h2>
+            <button class="btnclose">×</button>
+        </div>
+        <div class="goodsbot">
+            <div class="goodsleft">
+                <img src="img/2-64011-9.jpg" alt="">
+                <p>王国机神玄武 盖伦 完全体</p>
+            </div>
+            <div class="goodsright">
+                <p>价格：<span class="goodsospan">149</span>Q币</p>
+                <p>期限：<span>永久</span></p>
+                <span class="goodsbotid" style="display: none;"></span>
+                <button class="btnsend">确定</button>
+            </div>
+        </div>
+    </div>
+    <!-- 搜索栏悬浮栏 -->
+    <div class="jjj">
+        <!-- 输入框 -->
+        <div class="txt">
+            <a class="navico" href=""></a>
+            <input class="qiehuan" type="text" placeholder="输入道具进行搜索">
+        </div>
+    </div>
+</body>
+</html>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/cookieTools.js"></script>
+<script src="js/index.js"></script>
+<script src="js/banner.js"></script>

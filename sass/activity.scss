@@ -1,0 +1,236 @@
+@charset "utf-8"; // 设置支持中文注释
+
+$basefontsize:8px;
+$direction:top;
+
+$prefix: line;
+$light: light;
+// margin
+$mar:margin;
+// 背景
+$bj:background-image;
+// 背景位置
+$bp:background-position;
+// 背景平铺
+$br:background-repeat;
+//背景颜色
+$bcolor:background-color; 
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,form,input,fieldset,legend,img,select{
+    #{$mar}:0;
+    padding:0;
+}
+ul,ol,li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color:#333;
+}
+img{
+    display: inline-block;
+    border:0;
+    display: block;
+}
+body {
+    font-family: "微软雅黑";
+    color: #2e2e2e;
+    font-size: 12px;
+    background: #f3f4f6;
+}
+section,nav,header,footer,aside{
+    display:block;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight:normal;
+}
+strong,b{
+    font-weight:normal;
+}
+i,em{
+    font-style:normal;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.clear:after{
+    content:".";
+    display:block;
+    clear:both;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+}
+
+// 头部
+.header {
+    width: 100%;
+    height: 78px;
+    position: fixed;
+    background: #000000;
+}
+.header .logo {
+    float: left;
+    width: 132px;
+    height: 49px;
+    margin-top: 10px;
+}
+.head-nav {
+    float: left;
+    width: 55%;
+    height: 78px;
+    box-sizing: border-box;
+    margin-left: 30px;
+    padding-top: 16px;
+}
+.head-nav .oli {
+    float: left;
+    list-style: none;
+    width: 20%;
+    height: 62px;
+    text-align: center;
+}
+.head-nav .oli .oa {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+// 二级菜单
+.head-nav .oli div ul>li {
+    list-style: none;
+    width: 20%;
+    float: left;
+    height: auto;
+}
+
+.head-nav .oli div ul>li p {
+    height: 29px;
+    line-height: 29px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+.head-nav-title {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.head-nav-subtitle {
+    display: block;
+    color: #aeaeae;
+    font-size: 11px;
+    margin-top: -1px;
+    letter-spacing: 1px;
+}
+.head-search-btn {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 27px 0px 0px 100px;
+    background-image: url(../img/topfoot-spr.png);
+    background-position: -381px -39px;
+    background-repeat: no-repeat;
+}
+.icon-phone{
+    background-image: url(../img/topfoot-spr.png);
+    background-size: 405px 178px;
+    background-repeat: no-repeat;
+    float: left;
+    background-position: -303px -84px;
+    width: 16px;
+    height: 24px;
+    margin: 27px 0px 0px 36px;
+}
+
+
+
+.head-user{
+    float: right;
+    width: 244px;
+    height: 78px;
+    position: relative;
+}
+.head-user img{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 8px;
+    top: 21px;
+}
+.head-user span:nth-child(1){
+    display: inline-block;
+    background-position: -216px -115px;
+    width: 50px;
+    height: 50px;
+    margin-top: 9px;
+    background-image: url(../img/topfoot-spr.png);
+    background-size: 405px 178px;
+    background-repeat: no-repeat;
+}
+.head-user span:nth-child(2){
+    float: right;
+    margin-top: 27px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+// 中间
+
+.cont {
+    width: 100%;
+    height: 990px;
+    background: url(../img/actbg.jpg) no-repeat;
+    background-size: 100% 100%;
+
+}
+.btns{
+    text-align: center;
+     position: relative; 
+    z-index: 2;
+    top: 780px;
+}
+.btns a:nth-child(1){
+    width: 257px;
+    height: 71px;
+    background: url(../img/btns.png) 0 0 no-repeat;
+}
+.btns a:nth-child(2){
+    width: 257px;
+    height: 71px;
+    background: url(../img/btns.png) -257px -71px no-repeat;
+}
+.btns a:nth-child(3){
+    width: 257px;
+    height: 71px;
+    background: url(../img/btns.png) -514px 0 no-repeat;
+}
+.btns-bg{
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+/*最下边  */
+.footbot{
+    background: #000;
+    padding: 30px 0;
+    text-align: center;
+    line-height: 19px;
+    font-size: 12px;
+    border-top: 1px solid #444853;
+    color: #81858f;
+}
+.footbotcon a{
+    color: #81858f;
+}
+

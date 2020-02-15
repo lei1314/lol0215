@@ -1,0 +1,158 @@
+/* 设置a的颜色 */
+.topnav a{
+    color: #9f9f9f;
+}
+.navleft{
+    float: left;
+}
+.navleft span{
+    float: left;
+    width: 11px;
+    height: 16px;
+    background-image: url(../img/indexico.png);
+    background-repeat: no-repeat;
+    background-position: -42px -823px;
+    margin: 7px 3px 0 0;
+}
+.navright{
+    float: right;
+    width: 600px;
+}
+.navright .login{
+    display: inline-block;
+    margin-left: 100px;
+    margin-right: 5px;
+}
+.oa{
+    padding: 0 5px;
+}
+.oalast{
+    position: relative;
+    background-image: url(../img/indexico.png);
+    background-repeat: no-repeat;
+    background-position: -125px -273px;
+    box-sizing: border-box;
+    padding-right: 20px;
+    padding-bottom: 6px;
+}
+/* 二级菜单 */
+.nav2box{
+    position: absolute;
+    display: none;
+    z-index: 100;
+    left: -648px;
+    color: #000;
+    padding: 7px;
+    background: url(../img/gamearea.png);
+    background-position: 0 bottom;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, .1);
+}
+.nav2box table{
+    height: 220px;
+    width: 715px;
+    border-collapse: collapse;
+    border: 1px solid #d6d6d6;
+  
+}
+.nav2box table th{
+    cursor:auto;
+    font-size: 12px;
+    color: #0096D0;
+}
+.nav2box table td{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 8px;
+}
+.nav2box table th span{
+    font-size: 9px;
+    color: #BBBFCB;
+    padding: 0 5px;
+}
+/* 给td加背景图 */
+.xt{
+    background-image:url(../img/gamearea.png);
+    background-repeat: no-repeat;
+    background-position: 73px -46px;
+}
+/* --------------- */
+.lastding{
+    display: inline-block;
+    position: relative;
+    padding: 0 10px;
+}
+
+/* 地区里面的p标签 */
+
+
+.regionbox {
+    display: none;
+    z-index: 100;
+    border-top: none;
+    position: absolute;
+    left: 0px;
+    width: 300px;
+    border: 1px solid #191c25;
+    background-color: #191c25;
+    line-height: 24px;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, .1);
+}
+/* 设置地区的盒子大小 */
+
+.d1 {
+    width: 300px;
+    height: 196px;
+}
+
+
+/* 地区元素的样式 */
+
+.d1 a {
+    float: left;
+    width: 60px;
+    padding: 2px 0;
+    text-align: center;
+}
+
+
+/* 地区专属版本样式 */
+
+.d2 {
+    width: 290px;
+    height: 69px;
+    margin: 10px 0 10px 10px;
+}
+/* 一条线 */
+
+.d2-1 {
+    width: 262px;
+    height: 1px;
+    border-bottom: 1px dotted #eee;
+    margin-top: 10px;
+}
+
+
+/* 地区最下面 */
+
+.d3 {
+    margin: 10px 0 10px 10px;
+}
+/* li样式 */
+.d3 li {
+    float: left;
+    width: 140px;
+    height: 26px;
+    line-height: 26px;
+}
+
+.d3 img {
+    display: inline-block;
+    margin-right: 8px;
+    width: 15px;
+    height: 10px;
+    margin-top: 8px;
+    
+}

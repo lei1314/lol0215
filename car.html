@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="icon" href="img/lo.ico" type="images/x-ico" />
+    <link rel="stylesheet" href="css/foot.css">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/car.css">
+</head>
+<body>
+    <!-- 登录注册 -->
+    <div class="registerin clear">
+        <button id="btnclose">×</button>
+        <div class="registerintop">
+                <p>账号密码登录</p>
+                <p>推荐使用<a href="">快速安全登录</a>，防止盗号。</p>
+                <span id="msg"></span>
+                <input type="text" id="username" placeholder="支持QQ号/邮箱/手机号登录">
+                <input type="text" id="userpass" placeholder="密码">
+                <input type="text" id="btnLogin" value="登录">
+        </div>
+        <div class="registerinbot">
+            <a href="">&nbsp;忘了密码？&nbsp;</a>|<a href="reg.html">&nbsp;注册新账号&nbsp;</a>|<a
+                href="">&nbsp;意见反馈&nbsp;&nbsp;</a>
+        </div>
+    </div>
+    <div class="over"></div>
+    <!-- 顶部导航 -->
+    <div class="topnav">
+    </div>
+    <div class="contbox">
+        <!-- 通用主题栏 -->
+        <div class="menu">
+            <!-- 搜索栏 -->
+            <div class="nav-search">
+                <!-- 左边logo -->
+                <div class="logobox">
+                    <a class="navico" href=""></a>
+                </div>
+                <!-- 输入框 -->
+                <div class="navico soso">
+                    <div class="txt">
+                        <a class="navico" href=""></a>
+                        <input class="qiehuan" type="text" placeholder="输入道具进行搜索">
+                    </div>
+                </div>
+                <!-- 右边logo -->
+                <div class="logogame">
+                    <a class="navico" href=""></a>
+                </div>
+            </div>
+            <!-- 主导航栏 -->
+            <div class="navindex navico">
+                <!-- 左边导航 -->
+                <ul class="navl">
+                    <li class="navico"><a class="orange1" href="index.html">首页</a></li>
+                    <li class="navico"><a class="orange1" href="goodslist.html">商品列表</a></li>
+                    <li class="navico"><a class="orange1" href="activity.html">活动专区</a></li>
+                    <li class="navico"><a class="orange1" href="">限时折扣</a></li>
+                    <li class="navico"><a class="orange1" href="">聚豆乐园</a></li>
+                    <li class="navico"><a class="orange1" href="">周边商城</a></li>
+                    <li class="navico"><a class="orange1" href="">个人中心</a></li>
+                </ul>
+                <!-- 购物车 -->
+                <div class="car">
+                    <a href="">
+                        <i class="goods-upnum">()</i>
+                        <span class="navico"></span>
+                        <b>购物车</b>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="location-box">
+        您现在的位置：><a href="">购物车</a>
+    </div>
+    <!-- 中间部分 -->
+
+    <div class="mainer">
+        <!-- 收货角色信息 -->
+        <div class="payment">
+            <h3 class="car-title">收货角色信息</h3>
+            <div class="par-group">
+                <span>选择游戏角色：</span>
+                <select name="" id="">
+                    <option value="">请选择大区</option>
+                    <option value="1">艾欧尼亚 电信</option>
+                    <option value="2">比尔吉沃特 网通</option>
+                </select>
+                <select name="" id="">
+                    <option value="">请选择角色</option>
+                </select>
+            </div>
+            <div class="carlist">
+                <h2 class="car-title">商品信息</h2>
+                <div class="tablebox">
+                    <table>
+                        <tr class="firsttr" style="border-bottom: 1px dotted #DEDFDE">
+                            <th><input id="checkAllId" type="checkbox">全选</th>
+                            <th>商品名称</th>
+                            <th>类型</th>
+                            <th>单价</th>
+                            <th>期限</th>
+                            <th>数量</th>
+                            <th>优惠</th>
+                            <th>小计</th>
+                            <th>操作</th>
+                        </tr>
+                        <!-- <tr>
+                            <td><input type="checkbox"></td>
+                            <td><a href=""><img src="img/2-24014-9.jpg" alt="">王国机神白虎 贾克斯</a></td>
+                            <td>皮肤</td>
+                            <td><span>239.00</span>&nbsp;Q币</td>
+                            <td>永久</td>
+                            <td><button class="prevbtn">-</button><input type="text" class="goods-num" value="1"><button
+                                    class="nextbtn">+</button></td>
+                            <td>限时折扣</td>
+                            <td><span class="subtotal">119.50</span>&nbsp;Q币</td>
+                            <td><button>关注</button><button class="delbtn">删除</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td><a href=""><img src="img/2-89012-9.jpg" alt="">王国机神朱雀 蕾欧娜</a></td>
+                            <td>皮肤</td>
+                            <td><span>239.00</span>&nbsp;Q币</td>
+                            <td>永久</td>
+                            <td><button class="prevbtn">-</button><input type="text" value="1" class="goods-num"><button
+                                    class="nextbtn">+</button></td>
+                            <td>限时折扣</td>
+                            <td><span class="subtotal">119.50</span>&nbsp;Q币</td>
+                            <td><button>关注</button><button class="delbtn">删除</button></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td><a href=""><img src="img/2-119013-9.jpg" alt="">王国机神朱雀 蕾欧娜</a></td>
+                            <td>皮肤</td>
+                            <td><span>239.00</span>Q币</td>
+                            <td>永久</td>
+                            <td><button class="prevbtn">-</button><input type="text" value="1" class="goods-num"><button
+                                    class="nextbtn">+</button></td>
+                            <td>限时折扣</td>
+                            <td><span class="subtotal">119.50</span>&nbsp;Q币</td>
+                            <td><button>关注</button><button class="delbtn">删除</button></td>
+                        </tr> -->
+                    </table>
+                </div>
+
+                <div class="car-totalbox">
+                    <p class="fl">商品件数/最大件数(<span class="totalnum"></span>/10)</p>
+
+                    <p class="fr">共：<span class="totalnum"></span>个商品&nbsp;总价：<span
+                            class="totalMoney"></span><span>Q币</span></p>
+                </div>
+            </div>
+            <div class="yhq-info">
+                <h3 class="car-title">您的优惠信息</h3>
+                <div class="noticket">
+                    <span>优惠券总量:&nbsp;</span><span>0</span>&nbsp;&nbsp;<a href="">如何获得优惠券>></a>
+                </div>
+            </div>
+            <div class="cart-t1">
+                <p>英雄联盟周边商城火热上线<a href="">查看详情</a></p>
+                <div>实付款：<span class="actual-price"></span>Q币</div>
+                <div class="btn-car">提交订单</div>
+            </div>
+        </div>
+        <div class="payment">
+            <h3 class="car-title">温馨提示：</h3>
+            <ul>
+                <li>LOL优惠券使用规则：[道具包]分类道具全场无法使用，每张优惠券的信息，
+                    请仔细核对以下信息：订单满减的金额是否符合要求、优惠券限定可用的道具范围。
+                </li>
+                <li>"购买成功后系统会自动发货，如发货失败24小时内会自动补发。"</li>
+                <li>"请确认游戏中是否存在购物车中的英雄或皮肤，如果存在，请勿重复购买。"</li>
+                <li>"请重新登录游戏查收物品。"</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="foot">
+    </div>
+    <!-- 返回顶部 -->
+    <div class="fixednav">
+        <a class="go-top" href="javascript:"><span></span>返回顶部</a>
+        <a href="">反馈</a>
+    </div>
+</body>
+
+</html>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/cookieTools.js"></script>
+<script src="js/car.js"></script>
+<script type="text/javascript" src="js/checkAll.js" ></script>

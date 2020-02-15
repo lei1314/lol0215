@@ -1,0 +1,78 @@
+.foottop{
+    padding: 25px 0 33px 28px;
+    width: 1252px;
+    margin: 0 auto;
+}
+.foottop1{
+    width: 226px;
+    float: left;
+    border-right: 1px solid #444853;
+    height: 150px;
+}
+.foottop1 p{
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+    color: #acb1bb;
+}
+.foottop1 p span{
+    float: left;
+    margin: 0 10px 0 24px;
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/icon.png);
+    background-repeat: no-repeat;
+    background-position: 0 -136px;
+}
+.foottop1 ul{
+    margin-left: 65px;
+}
+.foottop1 ul li{
+    width: 100px;
+    height: 24px;
+    line-height: 24px;
+    display: block;
+    overflow: hidden;
+}
+.foottop1 ul li a{
+    color: #acb1bb;
+    font-size: 12px;
+}
+/* 二维码 */
+.code{
+    float: left;
+    height: 150px;
+    width: 298px;
+    color: #2e2e2e;
+    margin-left: 12px;
+}
+.code li{
+    float: left;
+    margin-left: 40px;
+    width: 100px;
+    height: auto;
+}
+.code img{
+    margin-bottom: 18px;
+    width: 100px;
+    height: 100px;
+}
+.code p{
+    text-align: center;
+    font-size: 16px;
+    color: #a4abb4;
+    line-height: 18px;
+}
+/*最下边  */
+.footbot{
+    background: #3b3f4a;
+    padding: 30px 0 60px 0;
+    text-align: center;
+    line-height: 19px;
+    font-size: 12px;
+    border-top: 1px solid #444853;
+    color: #81858f;
+}
+.footbotcon a{
+    color: #81858f;
+}
